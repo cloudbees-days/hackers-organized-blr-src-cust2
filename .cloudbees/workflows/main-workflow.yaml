@@ -156,7 +156,7 @@ jobs:
             | CRITICAL_COUNT       | ${{ steps.FetchSonarQubeIssues.outputs.CRITICAL_COUNT }} |
             | MAJOR_COUNT          | ${{ steps.FetchSonarQubeIssues.outputs.MAJOR_COUNT }} |
             | MINOR_COUNT          | ${{ steps.FetchSonarQubeIssues.outputs.MINOR_COUNT }} |
-            | ${{ secrets.SONAR_USER  }} | ${{ secrets.SONAR_TOKEN  }} |
+            | ${{ secrets.SNYK_ORGNAME }} | ${{ secrets.SNYK_TOKEN }} |
           format: MARKDOWN
   deploy:
     environment: DOW Production
